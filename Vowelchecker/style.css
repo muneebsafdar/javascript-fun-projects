@@ -1,0 +1,83 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.glow-container {
+  width: 400px;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  animation: glow 2s infinite alternate;
+  box-shadow: 0 0 20px rgba(187, 134, 252, 0.4);
+  transition: box-shadow 0.5s;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.3), 0 0 20px rgba(98, 0, 238, 0.3);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(187, 134, 252, 0.7), 0 0 60px rgba(98, 0, 238, 0.7);
+  }
+}
+
+h1 {
+  color: #bb86fc;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #292929;
+  color: white;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+textarea::placeholder {
+  color: #888;
+}
+
+.check-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #6200ea;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.check-btn:hover {
+  background-color: #7f39fb;
+}
+
+.result {
+  margin-top: 20px;
+  background-color: #292929;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #cfcfcf;
+}
