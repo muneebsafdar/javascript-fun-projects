@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Polling System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="poll-container">
+    <h1>Vote for Your Favorite Language</h1>
+
+    <div id="options" class="options">
+      <button class="option-btn">Python</button>
+      <button class="option-btn">JavaScript</button>
+      <button class="option-btn">C++</button>
+      <button class="option-btn">Java</button>
+    </div>
+
+    <button id="submit-btn" class="submit-btn">Submit Vote</button>
+
+    <div class="results">
+      <h2>Results</h2>
+
+      <div class="result-bar">
+        <label for="python">Python — <span id="pythonResult">0%</span></label>
+        <progress id="python" value="0" max="100"></progress>
+      </div>
+
+      <div class="result-bar">
+        <label for="js">JavaScript — <span id="JavaScriptResult" >0%</span></label>
+        <progress id="js" value="0" max="100"></progress>
+      </div>
+
+      <div class="result-bar">
+        <label for="cpp">C++ — <span id="cppResult">0%</span></label>
+        <progress id="cpp" value="0" max="100"></progress>
+      </div>
+
+      <div class="result-bar">
+        <label for="java">Java — <span id="javaResult">0%</span></label>
+        <progress id="java" value="0" max="100"></progress>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

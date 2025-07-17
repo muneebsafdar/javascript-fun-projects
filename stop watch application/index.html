@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timer App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Timer App</h1>
+    
+    <div class="timer-display" id="timerDisplay">
+        <span id="minutes">00</span> :  
+        <span id="seconds">00</span> : 
+        <span id="millioseconds">00</span>   
+    </div> 
+    <div id="controls" class="controls">
+      <button id="Start"  class="btn start">Start</button>
+      <button id="Pause" class="btn pause">Pause</button>
+      <button id="Stop" class="btn stop">Stop</button>
+      <button id="Reset" class="btn reset">Reset</button>
+    </div>
+    
+    <div class="lap-section">
+      <h2>Laps</h2>
+      <ul id="lapList">
+      </ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

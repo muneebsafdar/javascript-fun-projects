@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    box-shadow: 5px 5px 5px 5px #888888;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+
+}
+
+
+.no-slider{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li{
+    padding: 10px;
+    font-size:x-small;
+}
+
+img{
+    object-fit: contain;
+    position: absolute;
+    top:0;
+    z-index: -1;
+
+    
+}
+
+.image-container{
+    position: relative;
+    width: 200px;    /* or any size */
+    height: 200px;   /* or any size */
+    overflow: hidden; /* Optional: hides overflow if needed */
+    border: 2px solid #ccc;
+
+}
+
+.animate{
+
+    left: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0;
+    animation: slideIn 1s ease forwards;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+
+.arrows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: larger;
+}
+
+.no-slider-arrow{
+    width: 100%;
+}
+
+
+@keyframes slideIn {
+  0% {
+    left: 100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
